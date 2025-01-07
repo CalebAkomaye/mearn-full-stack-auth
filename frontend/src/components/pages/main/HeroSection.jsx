@@ -1,5 +1,4 @@
 import { useAuthStore } from '../../../store/AuthStore';
-import HomeButtons from './HomeButtons';
 
 const HeroSection = () => {
   const { user } = useAuthStore();
@@ -11,29 +10,11 @@ const HeroSection = () => {
         <div className='max-w-[48rem]'>
           <h1 className='text-5xl font-bold'>Hi there, {userName[0]}</h1>
           <p className='py-6 max-w-md mx-40'>
-            {/* Easily manage your APIs and keys with our comprehensive
-            documentation platform. Seamless integration, clear guides, and
-            secure key management—all in one place. */}
-            Unlock seamless audio transcription and text-to-speech conversion.
-            Our API effortlessly turns audio into text and text into clear,
-            natural speech.
+            {
+              'This robust and customizable Full-Stack SaaS Starter Template is your one-stop solution to kickstart your SaaS application without the hassle of setting up the foundational elements. Designed for developers and entrepreneurs, it saves time and ensures best practices for a production-ready application.'
+            }
           </p>
-          <div className='flex items-center gap-3'>
-            <HomeButtons
-              text={
-                'Try it Now! Explore our demo and see how our API seamlessly transforms audio to text and text to speech in real time.'
-              }
-              refr={'demo'}
-              bt={'Try it now'}
-            />
-            <HomeButtons
-              text={
-                'Dive into the Docs! Everything you need to integrate our powerful audio and text-to-speech API into your projects.'
-              }
-              refr={'docs'}
-              bt={'See docs'}
-            />
-          </div>
+          <div className='flex items-center gap-3'></div>
         </div>
       </div>
     </div>

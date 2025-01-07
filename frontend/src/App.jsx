@@ -63,7 +63,7 @@ const App = () => {
           }
         />
         <Route
-          path='/demo'
+          path='/'
           element={
             <ProtectedRoute>
               <DemoPage />
